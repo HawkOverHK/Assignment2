@@ -8,7 +8,7 @@ function clickHandler(event){
 document.body.addEventListener("click", clickHandler)
 
 function Sidebar(event){
-    if(event.target.textContent === "Dark Mode")//Side bar original function above does not affect it
+    if(event.target.textContent === "Dark Mode")//Side bar original function above does not affect it. Does not work as well in the long run(it was working previously)
     {
         document.getElementById("sidebar").classList.toggle("asideBG");
     }
