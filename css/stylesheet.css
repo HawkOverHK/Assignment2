@@ -35,7 +35,7 @@ a{
 li{
 margin: 9px;
 }
-.sidebar{
+#sidebar{
     background-color: #b6f6d9;
     border-radius: 5px;
     grid-row: 1/5;
@@ -46,7 +46,7 @@ display: grid;
 margin: 20px;
 grid-column: 1/4;
 }
-#NoteN {
+button {
     border: 0;
     height: 40px;
     padding: 0 20px;
@@ -54,19 +54,14 @@ grid-column: 1/4;
     text-align: center;
     color: white;
     border-radius: 12px;
+}
+#NoteN{
     background-color: #2c10e5;
 }
 #NoteN:hover {
     background-color:#0F97D2;
 }
-#Dark {
-    border: 0;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 14px;
-    text-align: center;
-    color: white;
-    border-radius: 12px;
+#Dark{
     background-color: rgb(88, 62, 62);
 }
 #Dark:hover {
@@ -78,28 +73,11 @@ grid-column: 1/4;
     padding: 15px;
     gap: 20px;;
 }
-.Cancel {
-    border: 0;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 14px;
-    text-align: center;
-    color: white;;
-    border-radius: 12px;
-    background-color: #2883A4;
-}
+.Cancel{        background-color: #2883A4;}
 .Cancel:hover {
     background-color: #16495B;
 }
-#Save {
-    border: 0;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 14px;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 3px grey;
-    border-radius: 12px;
+#Save{
     background-color: #E97BAB;
 }
 #Save:hover {
