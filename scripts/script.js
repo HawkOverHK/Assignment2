@@ -15,3 +15,27 @@ function Sidebar(event){
 }
 
 document.body.addEventListener("click", Sidebar)
+// Cancel Button Functionality //
+const CancelButton = document.querySelector('.Cancel')
+const textbox = document.querySelector('textarea') // textbox
+const bottom_buttons = document.querySelector('.buttons-bot')
+
+function cancel(){
+   textbox.style.visibility = 'hidden'
+   bottom_buttons.style.visibility = 'hidden'
+}
+CancelButton.addEventListener('click', cancel);
+
+// New Note functionality
+
+const NewnoteButton = document.querySelector('#NoteN')
+
+function newtoggle(){
+   textbox.style.visibility = 'visible'
+   bottom_buttons.style.visibility = 'visible'
+   if (textbox.style.visibility == 'visible'){
+      textbox.value = ''
+   }
+   
+}
+NewnoteButton.addEventListener('click', newtoggle);
