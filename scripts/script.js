@@ -39,3 +39,39 @@ function newtoggle(){
    
 }
 NewnoteButton.addEventListener('click', newtoggle);
+//Save Button
+const sidebar_notes = document.querySelector("aside", "ul", "nav")
+const saveButton = document.querySelector('#Save')
+
+function save(){
+   let saveName = prompt('What is the Title?:');
+   let generated_note = {title:saveName, body:textbox.value};
+   ArrayNotes.push(generated_note);
+   noteListAppend();
+   function noteListAppend(){
+      var listing = document.createElement('li');
+      var createNote = document.createTextNode(saveName);
+      listing.appendChild(createNote);
+      sidebar_notes.appendChild(listing);
+   }
+}
+saveButton.addEventListener("click" , save);
+
+//Array
+let ArrayNotes = 
+[{title:"Note One",
+   body:"This is the 1st note"},
+{title:"Note Two",
+   body:"This is the 2nd note"}
+]
+// Note List Functionality which doesn't function apparently.
+function NoteDisplay(inquiry){
+    var notetitle_Search = inquiry.target.innerText
+    for (var i = 0; i < ArrayNotes.length; i++)
+    {
+       if (ArrayNotes[i].title === notetitle_Search){
+          textbox.value = ArrayNotes[i].body
+       }
+    } 
+ }   
+ sidebar_notes.addEventListener("click", NoteDisplay);
