@@ -35,7 +35,7 @@ a{
 li{
 margin: 9px;
 }
-.sidebar{
+#sidebar{
     background-color: #b6f6d9;
     border-radius: 5px;
     grid-row: 1/5;
@@ -46,7 +46,7 @@ display: grid;
 margin: 20px;
 grid-column: 1/4;
 }
-#NoteN {
+button {
     border: 0;
     height: 40px;
     padding: 0 20px;
@@ -54,19 +54,14 @@ grid-column: 1/4;
     text-align: center;
     color: white;
     border-radius: 12px;
+}
+#NoteN{
     background-color: #2c10e5;
 }
 #NoteN:hover {
     background-color:#0F97D2;
 }
-#Dark {
-    border: 0;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 14px;
-    text-align: center;
-    color: white;
-    border-radius: 12px;
+#Dark{
     background-color: rgb(88, 62, 62);
 }
 #Dark:hover {
@@ -78,28 +73,11 @@ grid-column: 1/4;
     padding: 15px;
     gap: 20px;;
 }
-.Cancel {
-    border: 0;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 14px;
-    text-align: center;
-    color: white;;
-    border-radius: 12px;
-    background-color: #2883A4;
-}
+.Cancel{        background-color: #2883A4;}
 .Cancel:hover {
     background-color: #16495B;
 }
-#Save {
-    border: 0;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 14px;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 3px grey;
-    border-radius: 12px;
+#Save{
     background-color: #E97BAB;
 }
 #Save:hover {
@@ -122,9 +100,7 @@ grid-row: 3/5;
 {
     body{ grid-template-columns: 0.5fr 3fr 1fr;
         grid-template-rows: 0.5fr 3fr;
-        background-color:  #98ecbb;
         display:grid;
-        color: black;
     }
     .head
     {   text-align: center;
@@ -153,7 +129,7 @@ grid-row: 3/5;
     li{
     margin: 9px;
     }
-    .sidebar{
+    #sidebar{
         background-color: #b6f6d9;
         border-radius: 5px;
         grid-row: 1/5;
@@ -163,10 +139,8 @@ grid-row: 3/5;
             display: flex;
             justify-content: flex-start;
         }
-    #textbox{
-    margin: 20px;
-    }
-    #NoteN {
+
+    button{
         border: 0;
         height: 40px;
         padding: 0 20px;
@@ -174,19 +148,14 @@ grid-row: 3/5;
         text-align: center;
         color: white;
         border-radius: 12px;
+    }
+    #NoteN {
         background-color: #2c10e5;
     }
     #NoteN:hover {
         background-color:#0F97D2;
     }
     #Dark {
-        border: 0;
-        height: 40px;
-        padding: 0 20px;
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        border-radius: 12px;
         background-color: rgb(88, 62, 62);
     }
 
@@ -199,27 +168,12 @@ grid-row: 3/5;
     padding: 20px;
     }
     .Cancel {
-        border: 0;
-        height: 40px;
-        padding: 0 20px;
-        font-size: 14px;
-        text-align: center;
-        color: white;;
-        border-radius: 12px;
         background-color: #2883A4;
     }
     .Cancel:hover {
         background-color: #16495B;
     }
     #Save {
-        border: 0;
-        height: 40px;
-        padding: 0 20px;
-        font-size: 14px;
-        text-align: center;
-        color: white;
-        text-shadow: 1px 1px 3px grey;
-        border-radius: 12px;
         background-color: #E97BAB;
     }
     #Save:hover {
@@ -230,11 +184,13 @@ grid-row: 3/5;
         justify-content: flex-end;
         gap: 30px;
     padding: 20px;    }
-    footer{
-    display: flex;
-    justify-content: center;
-    grid-row: 3/5;
-    padding-bottom:75px;
-    }
+
 }
 /* Please note that all of this was copied from my original work file and this was my backup file. I deleted the original accidently and this copy I believe is not satisfactory. */
+/* Following CSS is used for the Scripts */
+.DarkBG{
+    background-color: grey;
+}
+.asideBG{
+    background-color: blue;
+}
